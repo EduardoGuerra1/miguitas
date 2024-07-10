@@ -1,6 +1,12 @@
 *{
     padding: 0;
-    margin: 0
+    margin: 0;
+    font-family:  Helvetica;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-container{
@@ -21,39 +27,82 @@
 .cards-container-box{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-container{
-    background-color: #E1D9F1;
+    background-color: #e9efff;
+    width: 25%;
+    margin: 15px;
+    border-radius: 2px;
 }
 
 .card-body{
     display: flex;
     flex-direction: column;
-    margin: 10px 15px 20px 15px;
+
+    padding: 5px;
+    border-radius: 2px;
 }
 
 .card-img{
-    height: 20vh;
-    background-color: #F1B3BC;
-    margin: 15px 25px 10px 25px;
+    height: 25vh;
+    background-color: #f1e2ed;
+    margin: 25px 35px 15px 35px;
 }
 
 .card-title h1{
-
     font-size: x-large;
     font-weight: 600;
-    color: #154E93;
+    color: #235789;
+}
+
+.card-title {
+    margin: 20px 25px 20px 25px;
+    margin: 10px 15px 30px 15px;
+}
+
+.card-prices{
+    margin-bottom: 10px;
+    margin: 10px 15px 30px 15px;
+}
+
+.card-prices p{
+    font-weight: 500;
+    font-size: x-large;
+    color: #686868;
+}
+
+.card-actions {
+    margin: 10px 0 0;
+    display: flex;
+    flex-direction: row;
+    margin-inline: 10px;
+    margin: 10px 5px 30px 5px;
+}
+
+.card-actions div{
+    flex: 2;
+}
+
+.card-actions svg{
+    flex: 1;
+    cursor: pointer;
 }
 
 .btn-container{
     border-radius: 25px;
     border: none;
     outline: none;
-    padding: 10px 20px 10px 20px;
-    background-color: #154E93;
+    padding: 10px 25px 10px 25px;
+    background-color: #235789;
     color: whitesmoke;
     font-size: x-large;
     font-weight: 600;
     cursor: pointer;
+}
+
+.btn-container:hover{
+    background-color: #2b6ab8;
 }
