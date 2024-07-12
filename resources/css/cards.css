@@ -116,7 +116,7 @@ body{
     width: 22%;
     margin: 40px;
     padding: 5px 5px 10px 5px;
-    border-radius: 70px;
+    border-radius: 30px;
 }
 /* Estilo para el header de la card */
 .featured2-card-header{
