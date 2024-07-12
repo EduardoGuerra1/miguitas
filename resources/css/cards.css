@@ -7,6 +7,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .main-container{
@@ -41,6 +42,7 @@ body{
     margin: 15px;
     border-radius: 2px;
     position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 79% 100%, 0% 100%);
 }
 /* Estilo para establecer el doblez en la esquina inferior derecha */
 .featured-card-container::after {
@@ -53,18 +55,7 @@ body{
     background-color: #f3c0e6;
     clip-path: polygon(40% 20%, 100% 0, 30% 100%);
 }
-/* Estilo para dejar el color fondo de la página en la esquina inferior derecha */
-.featured-card-container::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 30%;
-    height: 20%;
-    background-color: white; 
-    clip-path: polygon(100% 0, 30% 100%, 100% 100%);
-    z-index: 1;
-}
+
 /* Estilo para el cuerpo de la card */
 .featured-card-body{
     display: flex;
@@ -308,7 +299,10 @@ body{
     width: 23%;
     margin: 15px;
     border-radius: 2px;
+    border: none;
     position: relative;
+    border: none;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 82% 100%, 0% 100%);
 }
 /* Estilo para establecer el doblez en la esquina inferior derecha */
 .favorite-card-container::after {
@@ -321,18 +315,7 @@ body{
     background-color: #f3c0e6;
     clip-path: polygon(40% 20%, 100% 0, 30% 100%);
 }
-/* Estilo para dejar el color fondo de la página en la esquina inferior derecha */
-.favorite-card-container::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 25%;
-    height: 20%;
-    background-color: white; 
-    clip-path: polygon(100% 0, 30% 100%, 100% 100%);
-    z-index: 1;
-}
+
 /* Estilo para el cuerpo de la card */
 .favorite-card-body{
     display: flex;
