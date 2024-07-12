@@ -1,0 +1,241 @@
+/* Importaciones de las fuentes de Pluto */
+
+/* Pluto Light */
+@font-face {
+    font-family: 'Pluto Light';
+    src: url('../fonts/pluto/HvDTrial_Pluto-Light-BF6486959ecadac.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Light';
+    src: url('../fonts/pluto/HvDTrial_Pluto-LightItalic-BF6486959dc36e6.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Pluto Medium */
+@font-face {
+    font-family: 'Pluto Medium';
+    src: url('../fonts/pluto/HvDTrial_Pluto-Medium-BF6486959ddd7bf.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Medium';
+    src: url('../fonts/pluto/HvDTrial_Pluto-MediumItalic-BF6486959de83cf.otf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Pluto Regular */
+@font-face {
+    font-family: 'Pluto';
+    src: url('../fonts/pluto/HvDTrial_Pluto-Regular-BF6486959e20f81.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto';
+    src: url('../fonts/pluto/HvDTrial_Pluto-RegularItalic-BF6486959e36eb3.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Pluto Thin */
+@font-face {
+    font-family: 'Pluto Thin';
+    src: url('../fonts/pluto/HvDTrial_Pluto-Thin-BF6486959e39509.otf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Thin';
+    src: url('../fonts/pluto/HvDTrial_Pluto-ThinItalic-BF6486959e74c85.otf');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Pluto Condensed Regular */
+@font-face {
+    font-family: 'Pluto Condensed';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondRegular-BF6486959e6db70.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Condensed';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondRegularItalic-BF6486959e518ff.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Pluto Condensed Thin */
+@font-face {
+    font-family: 'Pluto Condensed Thin';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondThin-BF6486959ea5491.otf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Condensed Thin';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondThinItalic-BF6486959ebdb2a.otf');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Pluto ExtraLight */
+@font-face {
+    font-family: 'Pluto ExtraLight';
+    src: url('../fonts/pluto/HvDTrial_Pluto-ExtraLight-BF6486959ebd8fc.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto ExtraLight';
+    src: url('../fonts/pluto/HvDTrial_Pluto-ExtraLightItalic-BF6486959ed2474.otf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Pluto Heavy */
+@font-face {
+    font-family: 'Pluto Heavy';
+    src: url('../fonts/pluto/HvDTrial_Pluto-Heavy-BF6486959ebdea6.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Heavy';
+    src: url('../fonts/pluto/HvDTrial_Pluto-HeavyItalic-BF6486959ed1c09.otf');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Pluto Condensed Black */
+@font-face {
+    font-family: 'Pluto Condensed Black';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondBlack-BF6486959ed9374.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Condensed Black';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondBlackItalic-BF6486959f051fc.otf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Pluto Condensed Bold */
+@font-face {
+    font-family: 'Pluto Condensed Bold';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondBold-BF6486959ee76ac.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Condensed Bold';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondBoldItalic-BF6486959eed720.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Pluto Condensed ExtraLight */
+@font-face {
+    font-family: 'Pluto Condensed ExtraLight';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondExtraLight-BF6486959ece922.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Condensed ExtraLight';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondExtraLightItalic-BF6486959ecb5e6.otf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Pluto Condensed Heavy */
+@font-face {
+    font-family: 'Pluto Condensed Heavy';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondHeavy-BF6486959f00327.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Condensed Heavy';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondHeavyItalic-BF6486959eda609.otf');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Pluto Condensed Light */
+@font-face {
+    font-family: 'Pluto Condensed Light';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondLight-BF6486959f03865.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Condensed Light';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondLightItalic-BF6486959eec917.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Pluto Condensed Medium */
+@font-face {
+    font-family: 'Pluto Condensed Medium';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondMedium-BF6486959ef15a3.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Condensed Medium';
+    src: url('../fonts/pluto/HvDTrial_Pluto-CondMediumItalic-BF6486959ef1074.otf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Pluto Black */
+@font-face {
+    font-family: 'Pluto Black';
+    src: url('../fonts/pluto/HvDTrial_Pluto-Black-BF6486959f01ef6.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Black';
+    src: url('../fonts/pluto/HvDTrial_Pluto-BlackItalic-BF6486959ee62b5.otf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Pluto Bold */
+@font-face {
+    font-family: 'Pluto Bold';
+    src: url('../fonts/pluto/HvDTrial_Pluto-Bold-BF6486959ee6381.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Bold';
+    src: url('../fonts/pluto/HvDTrial_Pluto-BoldItalic-BF6486959ef0732.otf');
+    font-weight: 700;
+    font-style: italic;
+}
