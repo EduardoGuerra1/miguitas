@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
 const loadTemplate = async () => {
     const BODY = document.querySelector('body');
     BODY.insertAdjacentHTML('beforebegin', `
-        <header>
+        <header class="shown">
         <div class="logo">
-            <img src="../../resources/img/test.jpg" alt="">
+            <img src="../../resources/img/logo.png" alt="">
         </div>
         <div class="container">
             <div class="nav">
@@ -78,3 +78,11 @@ const loadTemplate = async () => {
     </header>
     `);
 };
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY < 20) {
+        document.querySelector("header").classList.add("shown");
+    } else{
+        document.querySelector("header").classList.remove("shown");
+    }
+});
