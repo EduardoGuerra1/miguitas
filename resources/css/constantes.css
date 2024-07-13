@@ -5,8 +5,15 @@
     --pink: #ffc9fa;
     --dark-blue: #254183;
     --green: #5ca49b;
+    --gray: #acacac;
+    --light-gray: #e9efff;
+    --light-blue: #93AFFD;
+    --light-blue2: #6E83BE;
+    --peach: #e8cad2;
 
-    --dark-blue-selected: #617dc0;
+
+    --dark-blue-selected: #84a0e3;
     --pink-selected: #e296e2;
     --green-selected: #34756b;
+    --light-blue2-selected: #236baf;
 }

@@ -1,7 +1,8 @@
 *{
     padding: 0;
     margin: 0;
-    font-family:  Helvetica;
+    font-family: 'Pluto Condensed Medium';
+    font-weight: 200;
 }
 body{
     display: flex;
@@ -31,7 +32,7 @@ body{
 }
 /* Estilo para el contenedor de las cards*/
 .featured-card-container {
-    background-color: #e9efff;
+    background-color: var(--light-gray);
     width: 28%;
     margin: 15px;
     border-radius: 2px;
@@ -46,7 +47,7 @@ body{
     right: 0;
     width: 30%;
     height: 20%;
-    background-color: #f3c0e6;
+    background-color: var(--pink);
     clip-path: polygon(40% 20%, 100% 0, 30% 100%);
 }
 
@@ -60,14 +61,15 @@ body{
 /* Estilo para el div de la imagen */
 .featured-card-img{
     height: 30vh;
-    background-color: #e8cad2 ;
+    background-color: var(--peach);
     margin: 25px 35px 15px 35px;
 }
 /* Estilo para el título de la card */
 .featured-card-title h1{
-    font-size: x-large;
-    font-weight: 600;
-    color: #235789;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--light-blue2);
 }
 
 .featured-card-title {
@@ -79,9 +81,10 @@ body{
 }
 
 .featured-card-prices p{
-    font-weight: 500;
-    font-size: large;
-    color: #979696;
+    font-weight: 100;
+    font-size: 22px;
+    text-align: center;
+    color: var(--gray);
 }
 /* Estilo para el div de acciones de la card */
 .featured-card-actions {
@@ -99,6 +102,10 @@ body{
     cursor: pointer;
 }
 
+.featured-card-actions svg.favorite:hover{
+    fill: var(--dark-blue-selected);
+}
+
 
     /* ESTILO PARA LAS CARDS DE PRODUCTOS DESTACADOS 2 (featured2-card) */
 
@@ -112,11 +119,11 @@ body{
 }
 /* Estilo para el contenedor de la card */
 .featured2-card-container{
-    border: 3px solid #3f5eb4;
+    border: 3px solid var(--dark-blue);
     width: 22%;
     margin: 40px;
     padding: 5px 5px 10px 5px;
-    border-radius: 70px;
+    border-radius: 30px;
 }
 /* Estilo para el header de la card */
 .featured2-card-header{
@@ -128,8 +135,8 @@ body{
 .feautured2-card-header-icon{
     margin: 5px 0px 0px 5px;
     width: 40px;
-    height: 40px;
-    border: 4px solid #B3C7FF;
+    height: 40px; 
+    border: 4px solid var(--light-blue);
     border-radius: 50%;
 }
 /* Estilo para la caja de la informacion del header */
@@ -141,21 +148,21 @@ body{
 }
 /* Estilo para los elementos h2 de la informacion del header */
 .featured2-card-header-info h2{
-    font-weight: 600;
-    font-size: medium;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 .featured2-card-header-info .header-title{
-    color: #3f5eb4;
+    color: var(--light-blue2);
 }
 
 .featured2-card-header-info .header-subtitle{
-    color: #979696;
+    color: var(--gray);
 }
 /* Estilo para la imagen de la card */
 .featured2-card-img{
     height: 30vh;
-    background-color: #B3C7FF;
+    background-color: var(--light-blue);
     margin: 5px 25px 15px 25px;
 }
 /* Estilo para la caja de los botones de accion */
@@ -170,16 +177,22 @@ body{
     display: flex;
     gap: 10px; /* Espacio entre los íconos de interacción social */
 }
+
+.featured2-card-actions .social-interaction svg:hover{
+    fill: var(--dark-blue-selected);
+    cursor: pointer;
+}
 /* Estilo para el botón del carrito */
 .featured2-card-actions .shop {
+    cursor: pointer;
     display: flex;
     justify-content: flex-end;
 }
 /* Estilo para las vistas del producto */
 .featured2-card-views h2{
-    font-weight: 600;
-    font-size: medium;
-    color: #979696;
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--gray);
     text-align: start;
     margin: 0px 0px 0px 25px;
 }
@@ -195,20 +208,19 @@ body{
 }
 /* Estilo para las etiquetas h1 de la informacion del producto */
 .featured2-card-product-info h1{
-    font-size: x-large;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     text-align: start;
     margin: 10px 0px 0px 25px;
-    
 }
 
 .featured2-card-product-info .product-name{
-    color: #235789;
+    color: var(--light-blue2);
 }
 
 .featured2-card-product-info .product-price{
-    font-size: x-large;
-    color: #979696;
+    font-size: 20px;
+    color: var(--gray);
 }
 
 /* Estilo para el botón de informacion de la card o producto */
@@ -222,14 +234,14 @@ body{
 }
 /* Estilo para el icono */
 .featured2-card-info .icon{
-    background-color: #f5caea;
+    background-color: var(--pink);
     height: 100%;
     width: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: 5px solid #B3C7FF;
+    border: 5px solid var(--light-blue);
     position: relative;
     cursor: pointer;
 }
@@ -258,22 +270,34 @@ body{
 /* Estilo para la imágen de la card */
 .suggested-card-img{
     height: 30vh;
-    background-color: #f5caea;
+    background-color: var(--pink);
     margin: 5px 25px 15px 25px;
     border-radius: 25px;
 }
 /* Estilo para la informacion de la card */
 .suggested-card-info{
     display: flex;
+    flex-direction: row;
+    gap: 25%;
+    align-items: space-between;
+    margin: 5px 25px 15px 35px;
+}
+.suggested-card-info .social-interaction svg:hover{
+    fill: var(--dark-blue-selected);
+    cursor: pointer;
+}
+
+.suggested-card-info .product{
+    width: 60%;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 5px 25px 15px 35px;
 }
 /* Estilo para las etiquetas h2 de la card */
 .suggested-card-info h2{
-    font-size: large;
-    font-weight: 600;
-    color: #235789;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--light-blue2);
     margin: 5px 0;
 }
 
@@ -289,7 +313,7 @@ body{
 }
 /* Estilo para el contenedor de las cards*/
 .favorite-card-container {
-    background-color: #e9efff;
+    background-color: var(--light-gray);
     width: 23%;
     margin: 15px;
     border-radius: 2px;
@@ -306,7 +330,7 @@ body{
     right: 0;
     width: 25%;
     height: 20%;
-    background-color: #f3c0e6;
+    background-color: var(--pink);
     clip-path: polygon(40% 20%, 100% 0, 30% 100%);
 }
 
@@ -320,14 +344,15 @@ body{
 /* Estilo para el div de la imagen */
 .favorite-card-img{
     height: 30vh;
-    background-color: #f1e2ed;
+    background-color: var(--peach);
     margin: 25px 35px 15px 35px;
 }
 /* Estilo para el título de la card */
 .favorite-card-title h1{
-    font-size: x-large;
-    font-weight: 600;
-    color: #235789;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--light-blue2);
+    text-align: center;
 }
 
 .favorite-card-title {
@@ -340,8 +365,9 @@ body{
 
 .favorite-card-prices p{
     font-weight: 500;
-    font-size: large;
-    color: #979696;
+    font-size: 22px;
+    color: var(--gray);
+    text-align: center;
 }
 /* Estilo para el div de acciones de la card */
 .favorite-card-actions {
@@ -371,14 +397,14 @@ body{
     width: 23%;
     border-radius: 35px;
     margin: 10px;
-    border: 3px solid #B3C7FF;
+    border: 3px solid var(--light-blue);
 }
 /* Estilo para la imagen de la card */
 .blog-card-img{
     margin: -3px;
     border-radius: 35px;
-    border: 3px solid #B3C7FF;
-    background-color: #f5caea;
+    border: 3px solid var(--light-blue);
+    background-color: var(--pink);
     height: 30vh;
 }
 /* Estilo para la información de la card */
@@ -394,13 +420,13 @@ body{
 .blog-card-info .card-title{
     font-size: x-large;
     font-weight: 600;
-    color: #5bc5d2;
+    color: var(--light-blue);
     margin: 5px 0;
 }
 /* Estilo para el texto de la card */
 .blog-card-info .card-text{
     font-size: medium;
-    color: #979696;
+    color: var(--gray);
     margin: 5px 0;
 }
 /* Estilo para el botón de la card */
@@ -412,11 +438,13 @@ body{
 }
 
 .blog-card-info .card-button .card-info{
-    background-color: #f5caea;
-    color: #235789;
+    background-color: var(--light-blue);
+    color: white;
     font-weight: 600;
     border: none;
-    padding: 5px 15px;
+    border-radius: 15px;
+
+    padding: 7px 20px;
     cursor: pointer;
 }
 
@@ -426,7 +454,7 @@ body{
     border: none;
     outline: none;
     padding: 7px 25px 7px 25px;
-    background-color: #235789;
+    background-color: var(--light-blue);
     color: rgb(233, 233, 233);
     font-size: larger;
     font-weight: 600;
