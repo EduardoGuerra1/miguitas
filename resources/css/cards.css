@@ -254,11 +254,12 @@ body{
     /* ESTILOS PARA LAS CARDS DE PRODUCTOS SUGERIDOS (suggested-card) */
 /* Estilo para la caja dónde se mostrarán las cards */
 .suggested-card-container-box{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 10px 0 20px 0;
+    margin: 10px 0px;
 }
 /* Estilo para el contenedor de la card */
 .suggested-card-container{
@@ -309,12 +310,32 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     margin: 10px 0 20px 0;
 }
+
+.favorite-card-container-box .none-products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorite-card-container-box .none-products h1{
+    color: var(--light-blue);
+    font-size: 40px;
+    margin: 2vh 0;
+}
+
+.favorite-card-container-box .none-products button{
+
+    margin: 2vh 0;
+}
+
 /* Estilo para el contenedor de las cards*/
 .favorite-card-container {
     background-color: var(--light-gray);
-    width: 23%;
+    width: 21%;
     margin: 15px;
     border-radius: 2px;
     border: none;
@@ -449,18 +470,20 @@ body{
 }
 
 /* Estilo para los botones */
-.btn-container{
+
+button{
     border-radius: 25px;
     border: none;
     outline: none;
     padding: 7px 25px 7px 25px;
-    background-color: var(--light-blue);
-    color: rgb(233, 233, 233);
-    font-size: larger;
-    font-weight: 600;
+    background-color: var(--light-blue2);
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
-.btn-container:hover{
-    background-color: #2b6ab8;
+button:hover{
+    background-color: var(--light-blue2-selected);
 }
