@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+
 }
 
 body{
@@ -17,6 +18,18 @@ body{
     align-items: center;
 }
 
+.category-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: var(--light-blue);
+}
+
 .category-header{
     display: flex;
     flex-direction: row;
@@ -26,6 +39,45 @@ body{
     margin-bottom: 20px;
     width: 100%;
     background-color: var(--light-blue);
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category .category-img{
+    width: 40%;
+    height: 100%;
+    margin: 10px 30px;  
+}
+
+.category .category-img img{
+    background-color:  var(--light-blue2);
+    border-radius: 50%;
+    padding: 5px;
+    border: 4px solid white;
+    align-items: center;
+    width: 100%;
+    height: 100%;   
+    cursor: pointer;
+}
+
+.category .category-name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.category .category-name h1{
+    margin-left: 20px;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
 
 .header-button{
@@ -73,6 +125,15 @@ body{
     margin-left: 60px;
     font-size: 90px;
     color: white;
+}
+
+.subcategory-box{
+    margin-left: 3vw;
+}
+
+.subcategory-box h1{
+    font-size: 40px;
+    color: var(--pink);
 }
 
 .subcategory-container{

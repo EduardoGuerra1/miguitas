@@ -3,6 +3,8 @@
     margin: 0;
     font-family: 'Pluto Condensed Medium';
     font-weight: 200;
+    text-decoration: none;
+    color: inherit;
 }
 body{
     display: flex;
@@ -409,7 +411,8 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 10px 0 20px 0;
+    gap: 10px;
+    margin: 8vh 5vw ;
 }
 /* Estilo para el contenedor de la card */
 .blog-card-container{
@@ -439,8 +442,8 @@ body{
 }
 /* Estilo para el titulo de la card */
 .blog-card-info .card-title{
-    font-size: x-large;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 500;
     color: var(--light-blue);
     margin: 5px 0;
 }
@@ -459,14 +462,18 @@ body{
 }
 
 .blog-card-info .card-button .card-info{
-    background-color: var(--light-blue);
+    background-color: var(--light-blue2);
     color: white;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 20px;
     border: none;
-    border-radius: 15px;
-
-    padding: 7px 20px;
+    border-radius: 10px;
+    padding: 5px 20px;
     cursor: pointer;
+}
+
+.blog-card-info .card-button .card-info:hover{
+    background-color: var(--light-blue2-selected);
 }
 
 /* Estilo para los botones */
