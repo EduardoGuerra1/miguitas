@@ -3,10 +3,9 @@
 
     /* Colores Principales */
     --pink: #ffc9fa;
-    --dark-blue: #254183;
-    --green: #5ca49b;
+    --blue: #6e83be;
+    --l-blue: #93affd;
 
-    --dark-blue-selected: #617dc0;
+    --blue-selected: #41507a;
     --pink-selected: #e296e2;
-    --green-selected: #34756b;
 }
