@@ -412,7 +412,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 8vh 5vw ;
+    margin: 8vh 3vw ;
 }
 /* Estilo para el contenedor de la card */
 .blog-card-container{
