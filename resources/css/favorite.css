@@ -79,12 +79,13 @@
 }
 
 .suggested-container-box .prev{
-    transform: rotate(180deg);
+    margin-left: 2vw;
     width: 10%;
 }
 
 .suggested-container-box .prev svg{
     cursor: pointer;
+
 }
 
 .suggested-container-box .next{
