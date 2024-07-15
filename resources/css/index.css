@@ -6,12 +6,18 @@ main {
     flex-direction: column;
 }
 
+
+
 .m-decoration {
     width: 100vw;
-    overflow: hidden;
     height: 400px;
     position: relative;
     background-color: var(--l-blue);
+    overflow: hidden;
+}
+
+.md-pattern{
+    position: absolute;
 }
 
 .m-decoration .svg{
@@ -143,6 +149,12 @@ button{
 
 }
 
+
+
 button:hover{
     background-color: var(--blue-selected);
+}
+
+footer{
+    margin-top: 30px;
 }
