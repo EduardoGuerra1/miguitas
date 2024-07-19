@@ -506,6 +506,14 @@ h1.light-blue2{
     color: var(--light-blue2);
 }
 
+.light-blue{
+    color: var(--light-blue);
+}
+
+.light-blue2{
+    color: var(--light-blue2);
+}
+
 p.gray{
     color: var(--gray);
 }
@@ -545,12 +553,12 @@ p.light-blue2{
     width: 45%;
     padding: 10px;
     border: 2px solid var(--light-blue);
-    color: var(--light-blue);
+    color: var(--light-blue2);
     border-radius: 10px;
 }
 
 .inputs-container input::placeholder{
-    color: var(--light-blue);
+    color: var(--light-blue2);
 }
 
 .inputs-container input:focus{
