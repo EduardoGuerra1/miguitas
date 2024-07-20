@@ -514,6 +514,10 @@ h1.light-blue2{
     color: var(--light-blue2);
 }
 
+.gray{
+    color: var(--gray);
+}
+
 p.gray{
     color: var(--gray);
 }
@@ -557,6 +561,10 @@ p.light-blue2{
     border-radius: 10px;
 }
 
+.inputs-container input.full{
+    width: 93%;
+}
+
 .inputs-container input::placeholder{
     color: var(--light-blue2);
 }
@@ -571,6 +579,20 @@ p.light-blue2{
     flex-direction: row;
     gap: 2vh 1vw;
     font-size: 20px;
-    color: var(--light-blue);
+    color: var(--light-blue2);
     margin: 2vh 0;
+}
+
+.radio-buttons label{
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
 }

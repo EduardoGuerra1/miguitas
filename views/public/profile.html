@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Profile</title>
+    <link rel="stylesheet" href="../../resources/css/fonts.css">
+    <link rel="stylesheet" href="../../resources/css/constantes.css">
+    <link rel="stylesheet" href="../../resources/css/components.css">
+    <link rel="stylesheet" href="../../resources/css/template.css">
+    <link rel="stylesheet" href="../../resources/css/profile.css">
+
 </head>
 
 <body>
@@ -13,7 +19,7 @@
             <img src="" alt="">
             <div class="info">
                 <h1 class="light-blue">Nombre del usuario</h1>
-                <h2 class="gray">@Lorem ipsum dolor</h2>
+                <h2 class="gray din">@Lorem ipsum dolor</h2>
             </div>
         </div>
         <div class="inputs-container">
@@ -25,30 +31,45 @@
             <input type="text" placeholder="Dirección">
         </div>
         <div class="mascota">
-            <h2 class="light-blue">Datos de tu mascota</h2>
+            <h1 class="light-blue">Datos de tu mascota</h1>
             <div class="inputs-container">
                 <input type="text" placeholder="Nombre">
                 <input type="number" placeholder="Edad">
             </div>
-        <div class="radio-buttons column">
-            <div class="radio-btn">
-                <input type="radio" id="serfinsa" name="pago" value="serfinsa">
-                <label class="din" for="serfinsa">Red SERFINSA - Aceptamos pagos con tarjetas de las
-                    marcas Visa y
-                    Mastecard.</label>
+            <div class="radio">
+                <div class="radio-buttons row">
+                    <div class="radio-btn">
+                        <input type="radio" id="gato" name="gato" value="gato">
+                        <label class="din" for="gato">Gatito </label>
+                    </div>
+                    <div class="radio-btn">
+                        <input type="radio" id="perro" name="perro" value="perro">
+                        <label class="din" for="perro">Perrito </label>
+                    </div>
+                </div>
+                <div class="radio-buttons row">
+                    <div class="radio-btn">
+                        <input type="radio" id="hembra" name="hembra" value="hembra">
+                        <label class="din" for="hembra">Hembra</label>
+                    </div>
+                    <div class="radio-btn">
+                        <input type="radio" id="macho" name="macho" value="macho">
+                        <label class="din" for="macho">Macho</label>
+                    </div>
+                </div>
             </div>
-            <div class="radio-btn">
-                <input type="radio" id="transferencia" name="pago" value="transferencia">
-                <label class="din" for="transferencia">Transferencia bancaria Banco Agrícola y
-                    BAC</label>
+
+            <div class="inputs-container">
+                <input type="text" placeholder="Menciona si padece alguna enfermedad o alergia ">
+                <input type="text" placeholder="Menciona algún requisito en sus pedidos">
+                <input class="full" type="text" placeholder="Cuentas más acerca de tu mascota">
             </div>
-            <div class="radio-btn">
-                <input type="radio" id="qr-agricola" name="pago" value="qr-agricola">
-                <label class="din" for="qr-agricola">Código QR Banco Agrícola</label>
-            </div>
-        </div>
+            <button>Guardar</button>
         </div>
     </div>
+
+
+    <script src="../../controllers/template.js"></script>
 </body>
 
 </html>
