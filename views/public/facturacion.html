@@ -5,32 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facturacion</title>
+    <link rel="stylesheet" href="../../resources/css/fonts.css">
     <link rel="stylesheet" href="../../resources/css/constantes.css">
+    <link rel="stylesheet" href="../../resources/css/components.css">
+    <link rel="stylesheet" href="../../resources/css/template.css">
+    <link rel="stylesheet" href="../../resources/css/facturacion.css">
 </head>
 
 <body>
     <div class="main-container">
         <div class="info-container">
-            <h1 class="title">Horarios de Entrega</h1>
-            <p>
-                A Domicilio:
-                Martes a Viernes 10.00am a 3.00pm y Sábados de 9.00am a 4.00pm
-            </p>
-            <p>
-                En PAWstry Shop en La Sultana:
-                Martes a Viernes 11.00am a 6.00pm y Sábados 10.00am a 4.00pm
-            </p>
+            <h1 class="title light-blue2">Horarios de Entrega</h1>
+            <p class="gray">A Domicilio:</p>
+            <p class="gray">Martes a Viernes 10.00am a 3.00pm y Sábados de 9.00am a 4.00pm</p>
+            <p class="gray">En PAWstry Shop en La Sultana:</p>
+            <p class="gray">Martes a Viernes 11.00am a 6.00pm y Sábados 10.00am a 4.00pm</p>
         </div>
         <div class="facturation-container">
-            <h1 class="facturation-container-title">DETALLES DE FACTURACIÓN</h1>
-            <div class="facturation-client-info">
-                <input type="text" placeholder="Nombre" pattern="[A-Za-z]+">
+            <div class="detalles-entrega">
+                <div class="facturacion">
+                    <h1 class="title light-blue2">DETALLES DE FACTURACIÓN</h1>
+                    <div class="inputs-container">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Apellido">
+                        <input type="email" placeholder="Correo electrónico">
+                        <input type="tel" placeholder="Teléfono ">
+                    </div>
+                </div>
+                <div class="direccion">
+                    <div class="modos">
+                        <h1 class="title light-blue2">DIRECCIÓN DE ENVIO</h2>
+                            <div class="radio-buttons">
+                                <div class="radio-btn">
+                                    <input type="radio" id="domicilio" name="modo" value="domicilio">
+                                    <label class="din" for="domicilio">Envío a DOMICILIO</label>
+                                </div>
+                                <div class="radio-btn">
+                                    <input type="radio" id="pawstry-shop11" name="modo" value="pawstry-shop11">
+                                    <label class="din" for="pawstry-shop11">RETIRO en PAWstry Shop La Sultana
+                                        desde 11.00 am</label>
+                                </div>
+                                <div class="radio-btn">
+                                    <input type="radio" id="pawstry-shop2" name="modo" value="pawstry-shop2">
+                                    <label class="din" for="pawstry-shop2">RETIRO en PAWstry Shop La Sultana
+                                        desde 2.00 pm</label>
+                                </div>
+                            </div>
+                            <div class="inputs-container">
+                                <input type="text" placeholder="País">
+                                <input type="text" placeholder="Ciudad">
+                                <input type="text" placeholder="Municipio">
+                                <input type="text" placeholder="Dirección de la calle">
+
+                                <div class="date-container">
+                                    <div class="date">
+                                        <label class="din" for="fecha">Fecha de entrega:</label>
+                                        <input type="date" name="fecha" id="fecha" placeholder="Fecha de entrega">
+                                    </div>
+                                    <div class="text">
+                                        <p class="gray din">Tomamos órdenes con mínimo 1 día de anticipación.
+                                        </p>
+                                        <p class="gray din">Tomar en cuenta que NO se entrega Domingo ni Lunes</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="radio-buttons column">
+                                <div class="radio-btn">
+                                    <input type="radio" id="serfinsa" name="pago" value="serfinsa">
+                                    <label class="din" for="serfinsa">Red SERFINSA - Aceptamos pagos con tarjetas de las
+                                        marcas Visa y
+                                        Mastecard.</label>
+                                </div>
+                                <div class="radio-btn">
+                                    <input type="radio" id="transferencia" name="pago" value="transferencia">
+                                    <label class="din" for="transferencia">Transferencia bancaria Banco Agrícola y
+                                        BAC</label>
+                                </div>
+                                <div class="radio-btn">
+                                    <input type="radio" id="qr-agricola" name="pago" value="qr-agricola">
+                                    <label class="din" for="qr-agricola">Código QR Banco Agrícola</label>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pedido-container">
+                <div class="header">
+                    <div class="text">
+                        <h1 class="title light-blue2">SU PEDIDO</h1>
+                        <p class="small light-blue">Editar carrito</p>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product">
+                        <div class="img-container">
+                            <div class="img">
+                                <img src="" alt="">
+                            </div>
+                            <p class="small light-blue2">Mostrar detalles</p>
+                        </div>
+                        <div class="item">
+                            <h2 class="din">Lorem ipsum dolor sit</h2>
+                            <h2 class="din">$4.50</h2>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="line"></div>
+                        <div class="subtotal  item">
+                            <h2 class="din">Subtotal</h2>
+                            <h2 class="din">$4.50</h2>
+                        </div>
+                        <div class="impuestos item">
+                            <h2 class="din">Impuestos</h2>
+                            <h2 class="din">------</h2>
+                        </div>
+                        <div class="envio item">
+                            <h2 class="din">Envío</h2>
+                            <h2 class="din">------</h2>
+                        </div>
+                        <div class="total item">
+                            <h2 class="din">Total</h2>
+                            <h2 class="din">$4.50</h2>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="finish">
+                    <button>Finalizar la compra</button>
+                </div>
             </div>
         </div>
         <div class="buttons-container">
-
+            <div class="buttons">
+                <div class="return">
+                    <div class="prev">
+                        <svg width="30" height="35" viewBox="0 0 192 336" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 24L168 168L24 312" stroke="var(--light-blue)" stroke-width="48"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <button>Regresar al carrito</button>
+                </div>
+                <div class="continue">
+                    <button>Continuar</button>
+                    <div class="next">
+                        <svg width="30" height="35" viewBox="0 0 192 336" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 24L168 168L24 312" stroke="var(--light-blue)" stroke-width="48"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    
+                </div>
+            </div>
+            
         </div>
     </div>
+
+    <script src="../../controllers/template.js"></script>
 </body>
 
 </html>

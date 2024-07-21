@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Pluto Condensed Medium';
     font-weight: 200;
     text-decoration: none;
     color: inherit;
@@ -83,6 +82,7 @@ body{
 }
 
 .featured-card-prices p{
+    font-family: 'dine-r';
     font-weight: 100;
     font-size: 22px;
     text-align: center;
@@ -221,6 +221,7 @@ body{
 }
 
 .featured2-card-product-info .product-price{
+    font-family: 'dine-r';
     font-size: 20px;
     color: var(--gray);
 }
@@ -298,8 +299,8 @@ body{
 }
 /* Estilo para las etiquetas h2 de la card */
 .suggested-card-info h2{
+    font-family: 'dine-r';
     font-size: 20px;
-    font-weight: 500;
     color: var(--light-blue2);
     margin: 5px 0;
 }
@@ -387,6 +388,7 @@ body{
 }
 
 .favorite-card-prices p{
+    font-family: 'dine-r';
     font-weight: 500;
     font-size: 22px;
     color: var(--gray);
@@ -449,6 +451,7 @@ body{
 }
 /* Estilo para el texto de la card */
 .blog-card-info .card-text{
+    font-family: 'dine-r';
     font-size: medium;
     color: var(--gray);
     margin: 5px 0;
@@ -493,4 +496,103 @@ button{
 
 button:hover{
     background-color: var(--light-blue2-selected);
+}
+
+h1.light-blue{
+    color: var(--light-blue);
+}
+
+h1.light-blue2{
+    color: var(--light-blue2);
+}
+
+.light-blue{
+    color: var(--light-blue);
+}
+
+.light-blue2{
+    color: var(--light-blue2);
+}
+
+.gray{
+    color: var(--gray);
+}
+
+p.gray{
+    color: var(--gray);
+}
+
+p.light-blue{
+    color: var(--light-blue);
+}
+
+p.light-blue2{
+    color: var(--light-blue2);
+}
+
+.prev svg{
+ transform: rotate(180deg);
+}
+
+.line{
+    width: 90%;
+    height: 3px;
+    background-color: var(--light-blue);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.inputs-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vh 1vw;
+    margin: 1vh 0;
+}
+
+.inputs-container input{
+    font-family: 'dine-r';
+    font-size: 18px;
+    width: 45%;
+    padding: 10px;
+    border: 2px solid var(--light-blue);
+    color: var(--light-blue2);
+    border-radius: 10px;
+}
+
+.inputs-container input.full{
+    width: 93%;
+}
+
+.inputs-container input::placeholder{
+    color: var(--light-blue2);
+}
+
+.inputs-container input:focus{
+    outline: none;
+    border: 2px solid var(--light-blue2-selected);
+}
+
+.radio-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh 1vw;
+    font-size: 20px;
+    color: var(--light-blue2);
+    margin: 2vh 0;
+}
+
+.radio-buttons label{
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
 }
