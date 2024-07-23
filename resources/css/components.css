@@ -78,7 +78,7 @@ body{
 }
 /* Estilo para los precios */
 .featured-card-prices{
-    margin: 10px 15px 30px 15px;
+    margin: 10px 15px 40px 15px;
 }
 
 .featured-card-prices p{
@@ -117,13 +117,13 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 10px 0 20px 0;
+    margin: 10px 2vw 20px 2vw;
 }
 /* Estilo para el contenedor de la card */
 .featured2-card-container{
     border: 3px solid var(--dark-blue);
-    width: 22%;
-    margin: 40px;
+    width: 28%;
+    margin: 20px;
     padding: 5px 5px 10px 5px;
     border-radius: 30px;
 }
@@ -595,4 +595,100 @@ p.light-blue2{
 .column{
     display: flex;
     flex-direction: column;
+}
+
+/* Responsive para pantallas grandes (min-width: 1250px) */
+@media (min-width: 1250px) {
+    .featured-card-container, .featured2-card-container, .suggested-card-container, .favorite-card-container, .blog-card-container {
+        width: 25%;
+        margin: 20px 15px;
+    }
+    .featured-card-img, .featured2-card-img, .suggested-card-img, .favorite-card-img, .blog-card-img {
+        height: 35vh;
+        margin: 25px 30px;
+    }
+    .featured-card-title h1, .favorite-card-title h1, .blog-card-info .card-title {
+        font-size: 26px;
+    }
+    .featured-card-prices p, .favorite-card-prices p, .suggested-card-info h2, .blog-card-info .card-text {
+        font-size: 24px;
+    }
+    .blog-card-info .card-button .card-info {
+        font-size: 22px;
+    }
+}
+
+/* Responsive para pantallas medianas (max-width: 992px) */
+@media (max-width: 992px) {
+    .featured-card-container, .featured2-card-container, .favorite-card-container, .blog-card-container {
+        width: 35%;
+        margin: 15px 10px;
+    }
+    .suggested-card-container {
+        width: 30%;
+        padding: 5px 5px 20px 5px;
+    }
+    .featured-card-img, .featured2-card-img, .suggested-card-img, .favorite-card-img, .blog-card-img {
+        height: 25vh;
+        margin: 20px 25px 10px 25px;
+    }
+    .featured-card-title h1, .favorite-card-title h1, .blog-card-info .card-title {
+        font-size: 20px;
+    }
+    .featured-card-prices p, .favorite-card-prices p, .suggested-card-info h2, .blog-card-info .card-text {
+        font-size: 20px;
+    }
+    .blog-card-info .card-button .card-info {
+        font-size: 18px;
+    }
+}
+
+/* Responsive para pantallas pequeñas (max-width: 768px) */
+@media (max-width: 768px) {
+    .featured-card-container, .featured2-card-container, .favorite-card-container, .blog-card-container {
+        width: 45%;
+        margin: 10px 5px;
+    }
+    .suggested-card-container {
+        width: 40%;
+        padding: 5px 5px 15px 5px;
+    }
+    .featured-card-img, .featured2-card-img, .suggested-card-img, .favorite-card-img, .blog-card-img {
+        height: 20vh;
+        margin: 15px 20px 10px 20px;
+    }
+    .featured-card-title h1, .favorite-card-title h1, .blog-card-info .card-title {
+        font-size: 18px;
+    }
+    .featured-card-prices p, .favorite-card-prices p, .suggested-card-info h2, .blog-card-info .card-text {
+        font-size: 18px;
+    }
+    .blog-card-info .card-button .card-info {
+        font-size: 16px;
+    }
+}
+
+/* Responsive para pantallas muy pequeñas (max-width: 576px) */
+@media (max-width: 576px) {
+    .featured-card-container, .featured2-card-container, .favorite-card-container, .blog-card-container {
+        width:590%;
+        margin: 5px 2.5%;
+    }
+    .suggested-card-container {
+        width: 85%;
+        padding: 5px 5px 10px 5px;
+    }
+    .featured-card-img, .featured2-card-img, .suggested-card-img, .favorite-card-img, .blog-card-img {
+        height: 18vh;
+        margin: 10px 15px 5px 15px;
+    }
+    .featured-card-title h1, .favorite-card-title h1, .blog-card-info .card-title {
+        font-size: 16px;
+    }
+    .featured-card-prices p, .favorite-card-prices p, .suggested-card-info h2, .blog-card-info .card-text {
+        font-size: 16px;
+    }
+    .blog-card-info .card-button .card-info {
+        font-size: 14px;
+    }
 }
