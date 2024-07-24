@@ -62,9 +62,9 @@ const loadTemplate = async () => {
                 <a href="inicio.html">inicio</a>
                 <a href="tienda.html">tienda</a>
                 <a href="preguntas-frecuentes.html">preguntas frecuentes</a>
-                <a href="conócenos.html">conócenos</a>
+                <a href="conocenos.html">conócenos</a>
                 <a href="blog.html">blog</a>
-                <a href="galería.html">galeria</a>
+                <a href="galeria.html">galeria</a>
                 <a href="contactanos.html">contactarnos</a>
                 <a href="wa.me">
                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">

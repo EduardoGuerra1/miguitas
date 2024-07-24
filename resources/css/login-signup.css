@@ -1,0 +1,46 @@
+ .main-container{
+    display: flex;
+    justify-content: center;
+    margin: 3vh 0;
+}
+
+.form-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header{
+    display: flex;
+    height: 5vh;
+    gap: 0 0.5vw;
+}
+
+.form-header .rectangules{
+    width: 96%;
+    height: 100%;
+    display: flex;
+}
+
+.rectangules .rectangule1{
+    width: 40%;
+    height: 100%;
+    background-color: var(--pink);
+}
+
+.rectangules .rectangule2{
+    width: 60%;
+    height: 100%;
+    background-color: var(--light-blue);
+}
+
+.form-header .square{
+    width: 3.5%;
+    height: 100%;
+    background-color: var(--light-blue);
+}
+
+.form-content{
+    display: flex;
+    justify-content: center;
+}
