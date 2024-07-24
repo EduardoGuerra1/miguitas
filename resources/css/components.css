@@ -255,6 +255,25 @@ body{
 
 
     /* ESTILOS PARA LAS CARDS DE PRODUCTOS SUGERIDOS (suggested-card) */
+
+    .suggested-container-box .prev{
+        margin-left: 2vw;
+        width: 10%;
+    }
+    
+    .suggested-container-box .prev svg{
+        cursor: pointer;
+    
+    }
+    
+    .suggested-container-box .next{
+        width: 10%;
+    }
+    
+    .suggested-container-box .next svg{
+        cursor: pointer;
+    }
+    
 /* Estilo para la caja dónde se mostrarán las cards */
 .suggested-card-container-box{
     width: 100%;
@@ -273,6 +292,7 @@ body{
 }
 /* Estilo para la imágen de la card */
 .suggested-card-img{
+    width: 18vw;
     height: 30vh;
     background-color: var(--pink);
     margin: 5px 25px 15px 25px;
@@ -585,6 +605,27 @@ p.light-blue2{
 
 .radio-buttons label{
     cursor: pointer;
+}
+
+.select-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 1vw;
+}
+
+.select-container select{
+    font-family: 'dine-r';
+    font-size: 17px;
+    padding: 10px;
+    border: 2px solid var(--light-blue);
+    outline: none;
+    color: var(--gray);
+    border-radius: 10px;
+}
+.select-container select option{
+    font-family: 'dine-r';
+    font-size: 17px;
 }
 
 .row{
