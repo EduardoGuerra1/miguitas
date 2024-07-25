@@ -95,12 +95,12 @@ const loadTemplate = async () => {
             <div class="second-row">
                 <div class="main">
                     <span class="title">MENÚ</span>
-                    <a href="">Inicio</a>
-                    <a href="">Tienda</a>
-                    <a href="">Preguntas Frecuentes FAQ</a>
-                    <a href="">Conócenos</a>
-                    <a href="">Blog</a>
-                    <a href="">Galería</a>
+                    <a href="index.html">Inicio</a>
+                    <a href="tienda.html">Tienda</a>
+                    <a href="preguntas-frecuentes.html">Preguntas Frecuentes FAQ</a>
+                    <a href="conocenos.html">Conócenos</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="galeria.html">Galería</a>
                     <a href="contactanos.html">Contáctanos</a>
                 </div>
                 <div class="main">
@@ -168,7 +168,7 @@ const loadTemplate = async () => {
                     </div>
                     <div class="img">
                         <img class="one" src="../../resources/img/visa.png" alt="">
-                        <img class="two" src="../../resources/img/visa.png" alt="">
+                        <img class="two" src="../../resources/img/mastercard.jpg" alt="">
                     </div>
                 </div>
             </div>

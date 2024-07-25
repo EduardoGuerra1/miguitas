@@ -77,3 +77,12 @@
     border: 2px solid var(--light-blue2-selected);
 }
 
+@media (max-width: 992px){
+    .msg-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .escribenos .msg{
+        width: 66%;
+    }
+}

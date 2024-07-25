@@ -102,3 +102,9 @@
     display: flex;
     gap: 0 3vw;
 }
+
+@media (max-width: 992px){
+    .header{
+        background-position: center;
+    }
+}

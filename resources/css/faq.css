@@ -100,3 +100,17 @@ section p{
     width: 80%;
     margin: 1vh 0;
 }
+
+@media (max-width: 992px) {
+    .item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    summary{
+        width: 100%;
+    }
+    .header-container h1{
+        font-size: 60px;
+    }
+}

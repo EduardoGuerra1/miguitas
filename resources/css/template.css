@@ -391,6 +391,12 @@ footer .main-container .third-row .main-container-t .img{
     gap: 10px;    
 }
 
+footer .main-container .third-row .main-container-t .img .two{
+    width: 60%;
+    height: 65%;
+    border-radius: 10px;
+}
+
 @media screen and (width < 1480px){
     footer .main-container{
         width: 95%;

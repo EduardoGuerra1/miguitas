@@ -689,7 +689,14 @@ p.light-blue2{
     .blog-card-info .card-button .card-info {
         font-size: 18px;
     }
-    
+    .inputs-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .inputs-container input{
+        align-self: center;
+        width: 80%;
+    }
 }
 
 /* Responsive para pantallas pequeñas (max-width: 768px) */

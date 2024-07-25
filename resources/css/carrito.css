@@ -61,7 +61,6 @@
     margin: 4vh 0; /* Margen vertical */
     display: flex; /* Utiliza el modelo de caja flexible */
     flex-direction: row; /* Direcciona los elementos de manera horizontal */
-    gap: 0 1vw; /* Espaciado horizontal entre los elementos */
     color: white; /* Color del texto */
 }
 
