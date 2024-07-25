@@ -52,6 +52,7 @@ main {
 }
 
 .m-decoration-text{
+    z-index: -1;
     position: absolute;
     left: 20%;
     top: 100px;
@@ -182,4 +183,13 @@ footer{
     align-items: center;
     gap: 20px;
     margin-top: 30px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+    .header{
+
+        background-color: var(--light-blue);
+        background-position: left;
+    }
 }
