@@ -25,6 +25,7 @@ body{
 
 /* Estilo para la caja donde se muestran las cards */
 .featured-cards-container-box{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -102,6 +103,9 @@ body{
 .featured-card-actions svg{
     flex: 1;
     cursor: pointer;
+}
+.featured-card-actions a{
+    margin-left: 2vw;
 }
 
 .featured-card-actions svg.favorite:hover{
@@ -255,6 +259,25 @@ body{
 
 
     /* ESTILOS PARA LAS CARDS DE PRODUCTOS SUGERIDOS (suggested-card) */
+
+    .suggested-container-box .prev{
+        margin-left: 2vw;
+        width: 10%;
+    }
+    
+    .suggested-container-box .prev svg{
+        cursor: pointer;
+    
+    }
+    
+    .suggested-container-box .next{
+        width: 10%;
+    }
+    
+    .suggested-container-box .next svg{
+        cursor: pointer;
+    }
+    
 /* Estilo para la caja dónde se mostrarán las cards */
 .suggested-card-container-box{
     width: 100%;
@@ -273,6 +296,7 @@ body{
 }
 /* Estilo para la imágen de la card */
 .suggested-card-img{
+    width: 18vw;
     height: 30vh;
     background-color: var(--pink);
     margin: 5px 25px 15px 25px;
@@ -587,6 +611,27 @@ p.light-blue2{
     cursor: pointer;
 }
 
+.select-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 1vw;
+}
+
+.select-container select{
+    font-family: 'dine-r';
+    font-size: 17px;
+    padding: 10px;
+    border: 2px solid var(--light-blue);
+    outline: none;
+    color: var(--gray);
+    border-radius: 10px;
+}
+.select-container select option{
+    font-family: 'dine-r';
+    font-size: 17px;
+}
+
 .row{
     display: flex;
     flex-direction: row;
@@ -599,13 +644,16 @@ p.light-blue2{
 
 /* Responsive para pantallas grandes (min-width: 1250px) */
 @media (min-width: 1250px) {
-    .featured-card-container, .featured2-card-container, .suggested-card-container, .favorite-card-container, .blog-card-container {
+    .featured-card-container, .featured2-card-container, .suggested-card-container, .favorite-card-container {
         width: 25%;
         margin: 20px 15px;
     }
-    .featured-card-img, .featured2-card-img, .suggested-card-img, .favorite-card-img, .blog-card-img {
+    .featured-card-img, .featured2-card-img, .suggested-card-img, .favorite-card-img{
         height: 35vh;
         margin: 25px 30px;
+    }
+    .blog-card-img {
+        height: 35vh;
     }
     .featured-card-title h1, .favorite-card-title h1, .blog-card-info .card-title {
         font-size: 26px;

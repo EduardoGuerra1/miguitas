@@ -34,7 +34,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 20px 0px;
     margin-bottom: 20px;
     width: 100%;
@@ -65,16 +65,17 @@ body{
 }
 
 .category .category-name {
-    width: 100%;
+    width: 50vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-end;
+    text-align: end;
 }
 
 .category .category-name h1{
-    margin-left: 20px;
-    width: 100%;
+
+    align-self: flex-end;
+
     font-size: 30px;
     color: white;
     cursor: pointer;

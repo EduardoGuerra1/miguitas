@@ -290,7 +290,7 @@ footer .main-container .first-row .container span{
 footer .main-container .first-row .container p{
     color: white;
     font-size: 15px;
-    font-family: 'dine-b';
+    font-family: 'dine-r';
 }
 
 footer .main-container .second-row{
@@ -308,7 +308,7 @@ footer .main-container .second-row div .title,
 footer .main-container .second-row .info span{
     color: var(--pink);
     font-size: 15px;
-    font-family: 'dine-b';
+    font-family: 'dine-r';
     font-weight: 600;
 }
 
@@ -319,6 +319,7 @@ footer .main-container .second-row .main a{
     display: flex;
     gap: 10px;
     align-items: center;
+    font-family: 'dine-r';
 }
 
 footer .main-container .second-row .main.contact a svg path{
