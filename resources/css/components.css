@@ -25,6 +25,7 @@ body{
 
 /* Estilo para la caja donde se muestran las cards */
 .featured-cards-container-box{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -102,6 +103,9 @@ body{
 .featured-card-actions svg{
     flex: 1;
     cursor: pointer;
+}
+.featured-card-actions a{
+    margin-left: 2vw;
 }
 
 .featured-card-actions svg.favorite:hover{
@@ -640,13 +644,16 @@ p.light-blue2{
 
 /* Responsive para pantallas grandes (min-width: 1250px) */
 @media (min-width: 1250px) {
-    .featured-card-container, .featured2-card-container, .suggested-card-container, .favorite-card-container, .blog-card-container {
+    .featured-card-container, .featured2-card-container, .suggested-card-container, .favorite-card-container {
         width: 25%;
         margin: 20px 15px;
     }
-    .featured-card-img, .featured2-card-img, .suggested-card-img, .favorite-card-img, .blog-card-img {
+    .featured-card-img, .featured2-card-img, .suggested-card-img, .favorite-card-img{
         height: 35vh;
         margin: 25px 30px;
+    }
+    .blog-card-img {
+        height: 35vh;
     }
     .featured-card-title h1, .favorite-card-title h1, .blog-card-info .card-title {
         font-size: 26px;

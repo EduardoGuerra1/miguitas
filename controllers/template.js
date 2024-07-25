@@ -59,7 +59,7 @@ const loadTemplate = async () => {
                 </div>
             </div>
             <div class="button-navigation">
-                <a href="inicio.html">inicio</a>
+                <a href="index.html">inicio</a>
                 <a href="tienda.html">tienda</a>
                 <a href="preguntas-frecuentes.html">preguntas frecuentes</a>
                 <a href="conocenos.html">conócenos</a>
