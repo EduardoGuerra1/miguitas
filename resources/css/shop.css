@@ -43,7 +43,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
     padding: 20px 0px;
 
@@ -78,14 +78,14 @@ body{
 }
 
 .category-name {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: center;
     
 }
 
 .category-name h1{
-    margin-left: 50px;
+    margin-left: 65px;
     font-size: 30px;
     color: white;
     cursor: pointer;
@@ -107,4 +107,12 @@ body{
     font-size: 30px;
     color: white;
     margin: 20px 0;
+}
+
+
+@media (max-width: 1000px) {
+    .category-name h1{
+        margin-left: 10px;
+        font-size: 20px;
+    }
 }
