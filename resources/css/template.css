@@ -250,7 +250,7 @@ header .container .button-navigation a:hover svg path{
 /* FOOTER */
 
 footer{
-    background-color: var(--blue);
+    background-color: var(--l-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,6 +275,11 @@ footer .main-container .first-row{
     align-items: center;
 }
 
+footer .main-container .first-row img{
+    width: 175px;
+    height: 175px;
+}
+
 footer .main-container .first-row .container{
     display: flex;
     flex-direction: column;
@@ -283,14 +288,15 @@ footer .main-container .first-row .container{
 }
 
 footer .main-container .first-row .container span{
-    color: var(--pink);
-    font-size: 40px;
+    color: white;
+    font-size: 50px;
 }
 
 footer .main-container .first-row .container p{
     color: white;
-    font-size: 15px;
-    font-family: 'dine-r';
+    font-size: 20px;
+    font-family: 'din-r';
+    font-weight: 100;
 }
 
 footer .main-container .second-row{
@@ -306,8 +312,8 @@ footer .main-container .second-row div{
 
 footer .main-container .second-row div .title,
 footer .main-container .second-row .info span{
-    color: var(--pink);
-    font-size: 15px;
+    color: var(--l-pink);
+    font-size: 20px;
     font-family: 'dine-r';
     font-weight: 600;
 }
@@ -315,15 +321,24 @@ footer .main-container .second-row .info span{
 footer .main-container .second-row .main a{
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     gap: 10px;
-    align-items: center;
+    align-items: space-between;
     font-family: 'dine-r';
 }
 
 footer .main-container .second-row .main.contact a svg path{
     fill: white;
+}
+
+footer .main-container .second-row .main.contact a span{
+    font-family: 'dine-r';
+    font-weight: 100;
+}
+footer .main-container .second-row .main.contact a p{
+    font-family: 'dine-r';
+    font-weight: 100;
 }
 
 footer .main-container .second-row .main.contact a.wrapper{
@@ -332,9 +347,26 @@ footer .main-container .second-row .main.contact a.wrapper{
     align-items: start;
     width: 300px;
 }
+footer .main-container .second-row .main.contact a.wrapper.left{
+    justify-content: start;
+}
 
 footer .main-container .second-row .main.contact a.wrapper p{
     text-wrap: wrap;
+}
+
+footer .main-container .second-row .main.contact a.wrapper .extras .info{
+    display: flex;
+    flex-direction: row;
+    width: 290px
+}
+
+footer .main-container .second-row .main.contact a.wrapper .extras .info p{
+    width: 45%;
+}
+
+footer .main-container .second-row .main.contact a.wrapper .extras span{
+    color: var(--l-pink);
 }
 
 footer .main-container .second-row .info{
@@ -342,7 +374,7 @@ footer .main-container .second-row .info{
 }
 
 footer .main-container .second-row .info span{
-    color: white;
+    color: var(--l-pink);
     text-align: center;
 }
 
@@ -364,7 +396,7 @@ footer .main-container .second-row .info .images img{
 
 footer .main-container .third-row{
     width: 100vw;
-    background-color: var(--l-blue);
+    background-color: var(--pink);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,30 +405,39 @@ footer .main-container .third-row{
 footer .main-container .third-row .main-container-t{
     display: flex;
     width: 80%;
+    margin: 10px;
 }
 
 footer .main-container .third-row .main-container-t .text{
     display: flex;
     flex-direction: column;
     width: 80%;
-    color: white;
+    color: var(--l-blue);
     margin-top: 20px;
     margin-bottom: 15px;
 }
 
+footer .main-container .third-row .main-container-t .text .margin{
+    margin-top: 25px;
+}
+
+footer .main-container .third-row .main-container-t .text span{
+    font-family: 'din-r';
+    font-size: 20px;
+}
+
 footer .main-container .third-row .main-container-t .img{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;    
 }
 
-footer .main-container .third-row .main-container-t .img .two{
-    width: 60%;
-    height: 65%;
-    border-radius: 10px;
+footer .main-container .third-row .main-container-t .images img{
+    width: 45%;
+    object-fit: contain;
 }
-
 @media screen and (width < 1480px){
     footer .main-container{
         width: 95%;
