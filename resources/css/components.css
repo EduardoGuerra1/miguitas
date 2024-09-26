@@ -642,6 +642,9 @@ p.light-blue2{
     flex-direction: column;
 }
 
+.a-none {
+    clip-path: inset(0 0 40px 0);  /* Recorta 50px de la parte inferior */   
+}
 /* Responsive para pantallas grandes (min-width: 1250px) */
 @media (min-width: 1250px) {
     .featured-card-container, .featured2-card-container, .suggested-card-container, .favorite-card-container {
