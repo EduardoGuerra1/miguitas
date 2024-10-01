@@ -195,15 +195,6 @@
     background-color: var(--blue);
 }
 
-.suggested-container-box{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-
 .line{
     width: 100%;
 }
