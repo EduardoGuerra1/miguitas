@@ -23,6 +23,43 @@ body{
 
     /* ESTILO PARA LAS CARDS DE PRODUCTOS DESTACADOS 1 (featured-card */
 
+.featured-container-box{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-container-box .featured-cards-container-box{
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.featured-container-box .prev{
+    margin-left: 2vw;
+    width: 5%;
+}
+
+.featured-container-box .prev svg{
+    cursor: pointer;
+
+}
+
+.featured-container-box .next{
+    width: 5%;
+}
+
+.featured-container-box .next svg{
+    cursor: pointer;
+}
 /* Estilo para la caja donde se muestran las cards */
 .featured-cards-container-box{
     width: 100%;
@@ -35,12 +72,14 @@ body{
 /* Estilo para el contenedor de las cards*/
 .featured-card-container {
     background-color: whitesmoke;
-    width: 20vw;
+    width: 18vw;
 
-    margin: 15px;
+    margin: 25px;
     border-radius: 35px;
     position: relative;
     box-shadow: 10px 10px 4px -1px rgba(0,0,0,0.15);
+    flex-shrink: 0;
+    scroll-snap-align: center;
 }
 /* Estilo para el div del descueno */
 /* Estilo para el contenedor de descuento */
