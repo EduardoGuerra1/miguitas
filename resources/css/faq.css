@@ -74,14 +74,14 @@
     color: var(--light-blue);
 }
 
-section{
+.product-container section{
     width: 58%;
     display: flex;
     flex-direction: column;
     gap: 1.5vh 0;
 }
  
-summary{
+.product-container  summary{
     cursor: pointer;
     display: block;
     width: 80%;
@@ -93,7 +93,7 @@ summary{
 
 }
 
-section p{
+.product-container  section p{
     font-family: 'dine-r';
     font-size: 20px;
     color: var(--gray);
@@ -107,7 +107,7 @@ section p{
         justify-content: center;
         align-items: center;
     }
-    summary{
+    .product-container summary{
         width: 100%;
     }
     .header-container h1{
