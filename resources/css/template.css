@@ -159,10 +159,10 @@ header .container .button-navigation .nav{
         display: none;
         position: absolute;
         transform: translateX(-30%);
-        margin-top: 28px;
-        padding: 30px 15px 15px 25px;
+        margin-top: 28px !important;
+        padding: 30px 15px 15px 25px !important;
         background-color: whitesmoke !important;
-        width: 400px;
+        width: 400px !important;
         height: 430px;
         border-radius: 35px;
         flex-direction: column;
@@ -283,9 +283,11 @@ header .container .button-navigation .nav{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        margin: 0 !important;
+        gap: 0 !important;
     }
     .container .item .icon{
-        margin-right: 10px;
+        margin-right: 10px !important;
     }
     .container .item .icon svg{
        fill: var(--l-blue);
@@ -293,7 +295,7 @@ header .container .button-navigation .nav{
     .container .item .text{
         text-align: left;
         text-wrap: wrap;
-        width: 150px;
+        width: 150px !important;
     }
 }
 
