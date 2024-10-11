@@ -349,9 +349,11 @@ header .container .button-navigation a:hover svg path{
     }
     header .container .nav .icons{
         width: 30%;
+        min-width: 100px;
     }
     header .container .nav .icons a{
         width: 20% !important;
+        min-width: 25px;
         height: auto;
 
         svg{
@@ -384,12 +386,9 @@ header .container .button-navigation a:hover svg path{
 }
 
 @media screen and (width < 945px){
-    header{
-        height: 130px;
-    }
     header .container .nav{
         display: flex;
-        width: 100%;
+        
         height: 35%;
     }
     header .container .button-navigation{
@@ -404,20 +403,31 @@ header .container .button-navigation a:hover svg path{
 
 @media screen and (width < 610px){
 
-    header {
-        gap: 0px;
-        position: relative;
-        height: 40px;
-        max-height: 40px; /* Inicialmente igual a la altura */
-        transition: max-height .3s ease; /* Animación de la altura */
+    header .container .button-navigation .nav{
+        .container{
+            width: 220px !important;
+            height: auto;
+            margin-top: 51px;
+            transform: translateX(-5%);
+        }
+        .container.p-f{
+            width: 250px !important;
+            transform: translateX(-10%);
+        }
+        .container::before{
+            left: 40%;
+        }
+        .container.p-f::before{
+            left: 40%;
+        }
     }
-    
+
     header .container .nav{
         flex-direction: column;
-        align-items: end;
-        height: 100px;
+        align-items: center;
+        height: 50px;
         width: 100%;
-        gap: 15px;
+        gap: 5px;
     }
 
     header .container .nav .input{
@@ -426,17 +436,13 @@ header .container .button-navigation a:hover svg path{
     }
 
     header .container .button-navigation{
-        position: relative;
+        
         right: 10px;
         flex-wrap: nowrap;
         flex-direction: column;
-        align-items: end;
-        gap: 7px;
-    }
-
-    header .container .button-navigation a{
-        position: relative !important ;
-        right: -100%;
+        align-items: center;
+        gap: 2px;
+        margin-top: 30px;
     }
 
 
@@ -447,18 +453,7 @@ header .container .button-navigation a:hover svg path{
         user-select: none;
     }
 
-    header.shown{
-        gap: 0px;
-        position: relative;
-        height: fit-content;
-        max-height: fit-content;
-    }
 
-    header.shown .container .button-navigation a{
-        position: relative !important ;
-        right: 10px;
-        transition: all .3s ease;
-    }
 }
 
 
