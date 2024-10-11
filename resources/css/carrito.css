@@ -61,7 +61,7 @@
     margin: 4vh 0; /* Margen vertical */
     display: flex; /* Utiliza el modelo de caja flexible */
     flex-direction: row; /* Direcciona los elementos de manera horizontal */
-    color: white; /* Color del texto */
+    color: var(--dark-pink); /* Color del texto */
 }
 
 /* Título dentro del carrito */
@@ -72,8 +72,8 @@
 /* Contenedor de la información del producto */
 .product-info-container{
     width: 65%; /* Ancho del contenedor */
-    border-right: white solid 3px; /* Borde derecho blanco */
-    background-color: var(--pink); /* Color de fondo */
+    border-right: var(--l-blue) solid 3px; /* Borde derecho blanco */
+    background-color: white; /* Color de fondo */
 }
 
 /* Contenido dentro de la información del producto */
@@ -162,13 +162,13 @@
     justify-content: center; /* Centra los elementos horizontalmente */
     text-align: center; /* Centra el texto */
     border-radius: 15px; /* Bordes redondeados */
-    border: 3px solid white; /* Borde blanco */
+    border: 3px solid var(--dark-pink); /* Borde blanco */
     width: 100px; /* Ancho del contenedor */
 }
 
 /* Botones de cantidad */
 .quantity button {
-    background-color: var(--pink); /* Color de fondo de los botones */
+    background-color: white; /* Color de fondo de los botones */
     padding: 10px; /* Espaciado interno */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     font-size: 16px; /* Tamaño de la fuente */
@@ -182,11 +182,11 @@
     width: 35px; /* Ancho del input */
     height: 35px; /* Altura del input */
     text-align: center; /* Centra el texto */
-    border-left: 3px solid white; /* Borde izquierdo blanco */
-    border-right: 3px solid white; /* Borde derecho blanco */
+    border-left: 3px solid var(--dark-pink); /* Borde izquierdo blanco */
+    border-right: 3px solid var(--dark-pink); /* Borde derecho blanco */
     border-top: none; /* Sin borde superior */
     border-bottom: none; /* Sin borde inferior */
-    background-color: var(--pink); /* Color de fondo del input */
+    background-color: white; /* Color de fondo del input */
     color: var(--light-blue2); /* Color del texto */
     font-size: 16px; /* Tamaño de la fuente */
 }
@@ -220,7 +220,7 @@
 .pedido-info{
     width: 32%; /* Ancho del contenedor */
     padding: 2vh 2vw; /* Padding alrededor del contenedor */
-    background-color: var(--light-blue); /* Color de fondo */
+    background-color: white; /* Color de fondo */
 }
 
 /* Contenido dentro de la información del pedido */
@@ -230,9 +230,13 @@
     flex-direction: column; /* Direcciona los elementos de manera vertical */
 }
 
+.pedido-info .content h2{
+    color: var(--l-blue);
+}
+
 /* Línea divisoria dentro de la información del pedido */
 .pedido-info .line{
-    background-color: white; /* Color de fondo */
+    background-color: var(--l-blue); /* Color de fondo */
     width: 100%; /* Ancho completo de la línea */
     margin-top: 5px; /* Margen superior */
 }
@@ -274,13 +278,13 @@
 
 /* Botón de finalizar */
 .finish button{
-    background-color: white; /* Color de fondo del botón */
-    color: var(--light-blue2); /* Color del texto */
+    background-color: var(--light-blue2); /* Color de fondo del botón */
+    color: white; /* Color del texto */
 }
 
 /* Hover en el botón de finalizar */
 .finish button:hover{
-    background-color: var(--light-gray); /* Color de fondo en hover */
+    background-color: var(--blue-selected); /* Color de fondo en hover */
 }
 
 /* Contenedor de productos sugeridos */
@@ -293,10 +297,14 @@
 }
 
 /* Título dentro de productos sugeridos */
-.suggested-container h1{
+.suggested-container h1.light-blue2{
     color: var(--light-blue2); /* Color del texto */
     font-size: 40px; /* Tamaño de la fuente */
     margin: 2vh 7vw; /* Margen alrededor del título */
+}
+
+.suggested-container button{
+    align-self: center;
 }
 
 /* Caja contenedora de productos sugeridos */
