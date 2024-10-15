@@ -95,6 +95,11 @@ body{
 
     margin: 25px;
     border-radius: 35px;
+    background-color:  rgb(252, 252, 252);
+    width: 18vw;
+
+    margin: 25px;
+    border-radius: 35px;
     position: relative;
     box-shadow: 10px 10px 4px -1px rgba(0,0,0,0.15);
     flex-shrink: 0;
@@ -121,6 +126,10 @@ body{
     margin-right: 15px;
     font-family: 'dine-r';
 }
+.featured-card-container .discount h1{
+    margin-right: 15px;
+    font-family: 'dine-r';
+}
 /* Estilo para el cuerpo de la card */
 .featured-card-body{
     display: flex;
@@ -140,6 +149,17 @@ body{
 .featured-card-img img{
     width: 100%;
     height: auto ;
+    height: 25vh;
+    background-color: rgb(252, 252, 252);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+.featured-card-img img{
+    width: 100%;
+    height: auto ;
 }
 /* Estilo para el título de la card */
 .featured-card-title h1{
@@ -147,14 +167,17 @@ body{
     font-weight: 500;
     text-align: center;
     color: var(--light-blue);
+    color: var(--light-blue);
 }
 
 .featured-card-title {
     margin: 0 15px 5px 15px;
 }
 
+
 /* Estilo para los precios */
 .featured-card-prices{
+    margin: 10px 15px ;
     margin: 10px 15px ;
 }
 .featured-card-prices p{
@@ -163,6 +186,19 @@ body{
     font-size: 22px;
     text-align: center;
     color: var(--gray);
+}
+/* Estilo para el botón de comprar */
+.featured-card-btn{
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0;
+}
+.featured-card-btn .comprar{
+   background-color: var(--pink);
+   font-size: 20px;
+}
+.featured-card-btn .comprar:hover{
+   background-color: var(--pink-selected);
 }
 /* Estilo para el botón de comprar */
 .featured-card-btn{
@@ -724,6 +760,7 @@ box-shadow: 5px 6px 7px 7px rgba(0,0,0,0.15);
 }
 
 
+
 .blog-card-info .card-button .card-info:hover{
     background-color: white;
 }
@@ -1059,9 +1096,11 @@ p.light-blue2{
 /* Responsive para pantallas grandes (min-width: 1250px) */
 @media (min-width: 1250px) {
     .featured2-card-container, .suggested-card-container, .favorite-card-container {
+    .featured2-card-container, .suggested-card-container, .favorite-card-container {
         width: 25%;
         margin: 20px 15px;
     }
+    .featured2-card-img, .suggested-card-img, .favorite-card-img{
     .featured2-card-img, .suggested-card-img, .favorite-card-img{
         height: 35vh;
         margin: 25px 30px;
@@ -1071,11 +1110,14 @@ p.light-blue2{
     }
     .featured-card-title h1, .favorite-card-title h1, .blog-card-info .card-title {
         font-size: 24px;
+        font-size: 24px;
     }
     .featured-card-prices p, .favorite-card-prices p, .suggested-card-info h2, .blog-card-info .card-text {
         font-size: 22px;
+        font-size: 22px;
     }
     .blog-card-info .card-button .card-info {
+        font-size: 20px;
         font-size: 20px;
     }
 }
@@ -1149,10 +1191,14 @@ p.light-blue2{
     .comment-card-container{
         width: 250px;
     }
+    .comment-card-container{
+        width: 250px;
+    }
     .suggested-card-container {
         width: 85%;
         padding: 5px 5px 10px 5px;
     }
+    .featured-card-img, .suggested-card-img, .favorite-card-img, .blog-card-img {
     .featured-card-img, .suggested-card-img, .favorite-card-img, .blog-card-img {
         width: 60%;
         height: 18vh;
